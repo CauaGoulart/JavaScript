@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    
+
+    <form class="formulario" action="" method="post">
+        <h1>Cadastro Para Festa</h1>
+
+        <div class="container">
+            <p>Email</p>
+            <input type="email" name="Exemplo">
+        </div>
+
+        <div class="container">
+            <p>Telefone</p>
+            <input type="tel" pattern="[0-9]{10,}" name="Exemplo">
+        </div>
+
+        <div class="container">
+            <p>Escolha o horario</p>
+            <input type="radio" name="Exemplo" value="Exemplo1">Manha
+            <input type="radio" name="Exemplo" value="Exemplo2">Tarde
+            <input type="radio" name="Exemplo" value="Exemplo3">Noite
+        </div>
+
+        <div class="container">
+            <p>O que será levado?</p>
+            <input type="checkbox" name="Exemplo" value="Exemplo1">Comida
+            <input type="checkbox" name="Exemplo" value="Exemplo2">Bebida
+            <input type="checkbox" name="Exemplo" value="Exemplo3">Presentes
+        </div>
+
+        <div class="container">
+            <p>Escolha Data e Hora da Festa</p>
+            <input type="datetime-local" name="Exemplo" value="Exemplo1">Teste1
+        </div>
+
+        <div class="container">
+            <p>Qual o limite maximo de pessoas para a festa?</p>
+            <input type="number" name="Exemplo">
+        </div>
+
+        <div class="container">
+            <p>Qual cidade ocorrera a festa?</p>
+            <select name="Cidade">
+                <option value="Cr">Criciúma</option>
+                <option value="Tb">Tubarão</option>
+                <option value="Fl">Florianópolis</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <p>Caso tenha alguma especificação,por favor nos diga.</p>
+            <input type="text" pattern="[A-Za-z]">
+        </div>
+        <hr>
+        <div>
+            <textarea name="Descrição" rows="4" cols="40" readonly>Deixe conosco e sua festa estará pronta em um instante!</textarea>
+        </div>
+
+        <button>Enviar</button>
+
+    </form>
+
+</body>
+
+</html>

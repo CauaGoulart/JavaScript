@@ -1,0 +1,84 @@
+p {
+    font-size: 20px;
+}
+
+a:hover {
+    color: green;
+
+}
+
+a:visited {
+    color: black;
+
+}
+
+a:active {
+    color: orange;
+
+}
+
+h1 {
+    color: red;
+}
+
+.destaque {
+    color: yellow;
+    background-color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tituloTbl {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.containerAmarelo {
+    background-color: orange;
+    border: black solid 5px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+.containerVerde {
+    background-color: green;
+    border: black solid 5px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+
+}
+
+.containerAzul {
+    background-color: blue;
+    border: black solid 5px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+
+}
+
+ul li {
+    color: red;
+}
+
+.lista {
+    width: 200px;
+    background-color: rgb(198, 190, 190);
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    margin-bottom: 20px;
+}
+
+.containerLista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
