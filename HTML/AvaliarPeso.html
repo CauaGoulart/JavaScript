@@ -15,26 +15,23 @@
 
 <body>
 
-    <form class="formulario" action="#" onsubmit="calculoIMC()" method="get" autocomplete="off">
+    <div class="formularioDecoracao linha">
+    <form class="formulario" action="#" onsubmit="event.preventDefault();calculoIMC()" method="get" autocomplete="off">
+        <h1>Avaliar IMC</h1>
         <div class="container">
             <label for="txtNome">Nome:</label>
             <input type="text" id="txtNome" name="txtNome" minhaTag="txtNome" autocomplete="off">
         </div>
 
         <div class="container">
-            <label for="txtNome">Sexo:</label>
-            <input type="radio"  id="txtSexo" name="Exemplo" value="Exemplo1">Masc
-            <input type="radio"  id="txtSexo" name="Exemplo" value="Exemplo2">Fem
+            <label for="txtSexo">Sexo:</label>
+            <input type="radio"  id="txtSexo" name="Sexo" value="Masc">Masc
+            <input type="radio"  id="txtSexo" name="Sexo" value="Fem">Fem
         </div>
-
-
         <br>
         <div class="container">
             <label for="txtIdade">Peso:</label>
             <input type="text" id="txtPeso" name="txtIdade" minhaTag="txtIdade" autocomplete="off">
-        </div>
-        <br>
-        <div class="container">
             <label for="txtAltura">Altura:</label>
             <input type="text" id="txtAltura" name="txtAltura" minhaTag="txtAltura" autocomplete="off">
         </div>
@@ -44,13 +41,13 @@
         <button class="btn btn-primary btn-lg">Avaliar</button>
         <hr>
         <div>
-            <textarea name="Descrição" rows="4" cols="40" readonly>
-Nome: -  Sexo  
-IMC - xxxx
-        </textarea>
+            <textarea id="resultadoIMC" name="resultadoIMC" rows="4" cols="40" readonly></textarea>
+            
         </div>
 
     </form>
+
+</div>
 
 </body>
 
