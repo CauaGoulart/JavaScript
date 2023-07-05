@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/IMC.css">
+    <script src="JS/IMC.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <title>Avaliar Peso</title>
+</head>
+
+<body>
+
+    <div class="formularioDecoracao linha">
+    <form class="formulario" action="#" onsubmit="event.preventDefault();calculoIMC()" method="get" autocomplete="off">
+        <h1>Avaliar IMC</h1>
+        <div class="container">
+            <label for="txtNome">Nome:</label>
+            <input type="text" id="txtNome" name="txtNome" minhaTag="txtNome" autocomplete="off">
+        </div>
+
+        <div class="container">
+            <label for="txtSexo">Sexo:</label>
+            <input type="radio"  id="txtSexo" name="Sexo" value="Masc">Masc
+            <input type="radio"  id="txtSexo" name="Sexo" value="Fem">Fem
+        </div>
+
+
+        <br>
+        <div class="container">
+            <label for="txtIdade">Peso:</label>
+            <input type="text" id="txtPeso" name="txtIdade" minhaTag="txtIdade" autocomplete="off">
+            <label for="txtAltura">Altura:</label>
+            <input type="text" id="txtAltura" name="txtAltura" minhaTag="txtAltura" autocomplete="off">
+        </div>
+        <br>
+
+
+        <button class="btn btn-primary btn-lg">Avaliar</button>
+        <hr>
+        <div>
+            <textarea id="resultadoIMC" name="resultadoIMC" rows="4" cols="40" readonly></textarea>
+            
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
