@@ -38,7 +38,7 @@ function calculoIMC() {
       }
    }
 
-   var resultado = "Nome: " + nome + " - Sexo: " + sexo + "\nIMC: " + imc.toFixed(2) + " \nAvaliação: " + classificacao;
+   let resultado = "Nome: " + nome + " - Sexo: " + sexo + "\nIMC: " + imc.toFixed(2) + " \nAvaliação: " + classificacao;
 
    document.getElementById("resultadoIMC").value = resultado;
 }
